@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":2,"key":{"_id":1},"name":"_id_","ns":"banco_330520.usuarios"},{"v":2,"unique":true,"key":{"nome":1},"name":"nome_1","ns":"banco_330520.usuarios","background":true}],"uuid":"7d1ab6be420b45b3a31662c018528b40"}
