@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cadastro de Cursos - Login</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel='stylesheet' href='/stylesheets/dashboard.css' />
+</head>
+
+<body>
+    <% include ../_partials/navbar %>
+    <div class="container-fluid">
+        <div class="row">
+            <% include ../_partials/sidebar %>
+            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                <h1 class="page-header">Incluir Curso</h1>
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <form id="cadcurso-form" action="/novoCurso" method="post" role="form">
+                            <div class="form-group">
+                                <input type="number" min=0 name="curso[codigo]" id="codigo" tabindex="1" class="form-control" placeholder="Código" value="" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="curso[descricao]" id="descricao" tabindex="2" class="form-control" placeholder="Descrição" value="" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" min=0 name="curso[cargahoraria]" id="cargahoraria" tabindex="3" class="form-control" placeholder="Carga Horária" value="" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <select class="form-control" name="curso[categoria]"  tabindex="4" id="categoria" required>
+                                    <option>Desenvolvimento</option>
+                                    <option>Design</option>
+                                    <option>Testes</option>
+                                    <option>Gestão de TI</option>
+                                    <option>Administração</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-6 col-sm-offset-3">
+                                        <input type="submit" name="cadcurso-submit" id="cadcurso-submit" tabindex="4" class="form-control btn btn-primary" value="Salvar">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous" crossorigin="anonymous"></script>
+
+</body>
+</html>
