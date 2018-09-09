@@ -5,15 +5,23 @@ Projeto utilizado para Avaliação na Disciplina de Web Moderna do Curso MBA em 
 
 Turma 31SCJ - 2018 - Juliano Marques Nunes
 
+Pré-Requisitos
+==
+
+NodeJs
+MongoDb Community Server
+
 Instalação
 ==
 
     npm install
-
+    mongorestore --collection usuarios --db banco_330520 .\data\dump\banco_330520\usuarios.bson
+    mongorestore  --collection cursos --db banco_330520 .\data\dump\banco_330520\cursos.bson
 	
-Usage (basic cron usage):
+Usage (basic usage):
 ==
 
+    npm start
 
 
 Contribuições
