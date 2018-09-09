@@ -23,6 +23,9 @@ Usage (basic usage):
 
     npm start
 
+    http://localhost:3000 e insira os dados de Login
+    	Nome: admin
+	Senha: admin
 
 Contribuições
 ==
